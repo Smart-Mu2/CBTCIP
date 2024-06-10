@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    background-color: #04e762;
+}
+
+.navbar-list , .navbar-link {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-link > a {
+    text-decoration: none;
+    color: #1d232c;
+}
+
+.navbar-link > a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #1d232c;
+}
+
+.nav-font {
+    display: none;
+}
+
+/* Side navbar */
+.side-navbar {
+    background-color: #04e762;
+    width: 50%; height: 100%;
+    position: fixed;
+    top: 0; left: -68%;
+    padding: 20px;
+    color: #1d232c;
+    z-index: 1;
+    transition: 2s;
+}
+
+.navbar-ul {
+    list-style-type:none;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar-link > a {
+    text-decoration: none;
+    color: #1d232c;
+}
+
+.side-navbar-link > a:hover {
+    font-weight: bold;
+    color: #1d232c;
+}
+
+/* Home */
+#home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.home-mu2 {
+    font-size: 50px;
+}
+
+.home-dev {
+    display: flex;
+    align-items: center;
+}
+
+.home-dev > img {
+    margin-left: 10px;
+}
+
+/* About */
+#about {
+    background-color: #04e762;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.about-image {
+    align-self: flex-end;
+}
+
+.about-image > img{
+    width: 500px;
+}
+
+.about-summary {
+    margin: 30px;
+}
+
+.mu2-summary {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 12px;
+    text-align: justify;
+}
+
+.mu2-skill-edu {
+    position: relative;
+    left: 10%;
+    text-align: left;
+}
+
+/* Media Query */
+@media screen and (max-width:768px) {
+    .nav-font {
+        display: block;
+    }
+
+    .navbar-link {
+        display: none;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .home-mu2 {
+        font-size: 30px;
+    }
+
+    .home-title {
+        font-size: 20px;
+    }
+
+    .home-image > img {
+        width: 300px;
+    }
+
+    .home-dev > img {
+        width: 30px; height: 30px;
+    }
+
+    .about-image {
+        display: none;
+    }
+
+    .about-summary {
+        margin: 20px;
+
+    }
+}

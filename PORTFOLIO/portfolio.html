@@ -1,11 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" href="./Images/Mu2 Website Icon.png">
+
+
+    <!-- Google fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <h1>Portfolio</h1>
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 title="Muthupandi's Portfolio website">Portfolio</h1>
+        <ul class="navbar-list">
+            <li class="navbar-link"><a href="#home">Home</a></li>
+            <li class="navbar-link"><a href="#about">About</a></li>
+            <li class="navbar-link"><a href="#projects">Projects</a></li>
+            <!-- <li class="navbar-link"><a href="#resume">Resume</a></li> -->
+            <li class="navbar-link"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-font">
+            <i class="fa-solid fa-bars" onclick="sideNavbar()"></i>
+        </div>
+    </header>
+
+    <!-- Side navbar -->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeSideNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <ul class="navbar-ul">
+            <li class="side-navbar-link"><a href="#home">Home</a></li>
+            <li class="side-navbar-link"><a href="#about">About</a></li>
+            <li class="side-navbar-link"><a href="#projects">Projects</a></li>
+            <!-- <li class="side-navbar-link"><a href="#resume">Resume</a></li> -->
+            <li class="side-navbar-link"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Home -->
+    <div id="home">
+        <div class="home-intro">
+            <h1 class="home-title">Hi, <br><span class="home-mu2">I'm Muthupandi M</span></h1>
+            <div class="home-dev">
+                <h1 class="home-title">Web Developer</h1>
+                <img src="./Images/udacity-logo-png-5.png" alt="Coding logo" width="40px" height="40px">
+            </div>
+        </div>
+        <div class="home-image">
+            <img src="./Images/Muthu.jpg" alt="Muthu Image" width="400px">
+        </div>
+    </div><br><br><br>
+
+    <!-- About -->
+    <div id="about">
+        <div class="about-image">
+            <img src="./Images/Mu2 transparent 2.png" alt="Muthu Image">
+        </div>
+        <div class="about-summary">
+            <h2 style="text-decoration: underline;">About Me</h2>
+            <div class="mu2-summary">
+                <p>I am Muthupandi, based in Chennai, Tamilnadu, with a background in both commerce and technology. I
+                    completed my schooling at St. Paul's Higher Secondary School and earned my Bachelor of Computer
+                    Applications (BCA) degree from St. Thomas College of Arts and Science. I have 2 years and 6 months
+                    of experience working as a Store Executive at Royal Enfield headquarters, where I developed skills
+                    in inventory management, logistics, and team collaboration. Driven by my passion for technology, I
+                    transitioned to the IT field by completing a Full Stack Developer course with certification from
+                    Gozler Edtech. I am now seeking opportunities in IT where I can leverage my new skills in full stack
+                    development to contribute to innovative projects and grow professionally in a dynamic environment.
+                </p><br>
+                <h3>Key Skills:</h3>
+                <ul class="mu2-skill-edu">
+                    <li>Web Development (HTML, CSS, JavaScript, Bootstrap, React, etc.)</li>
+                    <li>Git and GitHub</li>
+                    <li>Excel</li>
+                </ul><br>
+                <h3>Education:</h3>
+                <ul class="mu2-skill-edu">
+                    <li>BCA (Bachelor of Computer Applications)</li>
+                    <p>St. Thomas College of Arts and Science, Chennai</p>
+                </ul><br>
+                <h3>Certifications:</h3>
+                <ul class="mu2-skill-edu">
+                    <li>Full Stack Developer Certification from Gozler Edtech</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects"></div>
+
+    <!-- Resume -->
+    <div id="resume"></div>
+
+    <!-- Contact -->
+    <div id="contact"></div>
+
+
+    <!-- JavaScript File -->
+    <script src="portfolio.js"></script>
 </body>
+
 </html>
