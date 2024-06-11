@@ -56,7 +56,7 @@ body {
 }
 
 .side-navbar-link {
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .side-navbar-link > a {
@@ -66,6 +66,10 @@ body {
 
 .side-navbar-link > a:hover {
     font-weight: bold;
+    color: #1d232c;
+}
+
+hr {
     color: #1d232c;
 }
 
@@ -96,7 +100,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 20px;
+    margin: 15px;
 }
 
 .about-image {
@@ -123,6 +127,38 @@ body {
     position: relative;
     left: 10%;
     text-align: left;
+}
+
+/* Projects */
+#projects {
+    background-color: gray;
+    margin: 10px; padding: 30px;
+}
+
+.mu2-project {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project {
+    width: 300px;
+    border: 2px solid #1d232c;
+    border-radius: 20px;
+    padding: 20px 10px 10px 10px;
+    margin: 10px;
+}
+
+.project > h3 {
+    text-decoration: underline;
+}
+
+/* Resume */
+.mu2-resume {
+    padding: 10px; margin: 20px;
+    background-color: #04e762;
+    border-radius: 30px;
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 /* Media Query */
@@ -164,5 +200,9 @@ body {
     .about-summary {
         margin: 20px;
 
+    }
+
+    .mu2-project {
+        flex-wrap: wrap;
     }
 }
