@@ -152,6 +152,51 @@ hr {
     text-decoration: underline;
 }
 
+.project a {
+    color: #1d232c;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact */
+#contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: #1d232c;
+    color: #04e762;
+}
+
+.contact h2 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.icon-size {
+    font-size: 1.25rem;
+}
+
+.contact ul {
+    list-style: none;
+    position: relative;
+    left: 5%;
+}
+
+.contact li {
+    padding: 5px;
+}
+
+.contact a {
+    color: #04e762;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
 /* Resume */
 .mu2-resume {
     padding: 10px; margin: 20px;
@@ -204,5 +249,9 @@ hr {
 
     .mu2-project {
         flex-wrap: wrap;
+    }
+
+    #contact img {
+        display: none;
     }
 }
