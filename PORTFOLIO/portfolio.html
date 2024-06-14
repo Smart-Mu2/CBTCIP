@@ -28,7 +28,6 @@
             <li class="navbar-link"><a href="#home">Home</a></li>
             <li class="navbar-link"><a href="#about">About</a></li>
             <li class="navbar-link"><a href="#projects">Projects</a></li>
-            <!-- <li class="navbar-link"><a href="#resume">Resume</a></li> -->
             <li class="navbar-link"><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav-font">
@@ -38,15 +37,27 @@
 
     <!-- Side navbar -->
     <div class="side-navbar">
-        <p style="text-align: right;" onclick="closeSideNavbar()">
+        <p onclick="closeSideNavbar()">
             <i class="fa-solid fa-xmark"></i>
         </p>
+        <img src="./Images/IMG_20230513_180558_399.jpg" alt="Muthu Profile Image" width="50px">
+        <div>
+            <h3>Muthupandi M</h3>
+            <p>Web Developer</p>
+        </div>
+        <hr style="margin-top: 10px;">
         <ul class="navbar-ul">
-            <li class="side-navbar-link"><a href="#home">Home</a></li>
-            <li class="side-navbar-link"><a href="#about">About</a></li>
-            <li class="side-navbar-link"><a href="#projects">Projects</a></li>
-            <li class="side-navbar-link"><a href="#">Resume</a></li>
-            <li class="side-navbar-link"><a href="#contact">Contact</a></li>
+            <li class="side-navbar-link"><a href="#home" onclick="closeSideNavbar()"><i
+                        class="fa-solid fa-house"></i>
+                    Home</a></li>
+            <li class="side-navbar-link"><a href="#about" onclick="closeSideNavbar()"><i
+                        class="fa-solid fa-address-card"></i> About</a></li>
+            <li class="side-navbar-link"><a href="#projects" onclick="closeSideNavbar()"><i
+                        class="fa-solid fa-diagram-project"></i> Projects</a></li>
+            <li class="side-navbar-link"><a href="./Resume/Muthupandi Resume.pdf" onclick="closeSideNavbar()"
+                    target="_blank"><i class="fa-solid fa-file"></i> Resume</a></li>
+            <li class="side-navbar-link"><a href="#contact" onclick="closeSideNavbar()"><i
+                        class="fa-solid fa-address-book"></i> Contact</a></li>
         </ul>
     </div>
 
@@ -58,7 +69,8 @@
                 <h1 class="home-title">Web Developer</h1>
                 <img src="./Images/udacity-logo-png-5.png" alt="Coding logo" width="40px" height="40px">
             </div>
-            <button class="mu2-resume">Download Resume</button>
+            <button class="mu2-resume"><a href="./Resume/Muthupandi Resume.pdf" target="_blank"><i class="fa-solid fa-file"></i> Download
+                    Resume</a></button>
         </div>
         <div class="home-image">
             <img src="./Images/Muthu.jpg" alt="Muthu Image" width="400px">
@@ -112,46 +124,52 @@
                 <img src="./Images/Portfolio.PNG" alt="Portfolio Website" width="300px" height="150px"><br><br>
                 <p>Developed and designed a responsive Portfolio website using HTML, CSS and JavaScript. The portfolio
                     website is a mobile responsive.</p><br>
-                <p>Click here to visit <a href="">Mu2 Portfolio</a></p>
+                <p>Click here to visit <a href="https://mu2projects.netlify.app/portfolio/portfolio" target="_blank">Mu2
+                        Portfolio</a></p>
             </div>
             <div class="project">
                 <h3>E-commerce website</h3><br>
                 <img src="./Images/e-commerce.PNG" alt="E-commerce Website" width="300px" height="150px"><br><br>
                 <p>Developed and designed a responsive E-commerce website using HTML, CSS and JavaScript. Implemented
                     user authentication, product catalog functionalities</p><br>
-                <p>Click here to visit <a href="">Mu2 Clothify</a></p>
+                <p>Click here to visit <a href="" target="_blank">Mu2 Clothify</a></p>
             </div>
             <div class="project">
                 <h3>Blog website for English</h3><br>
                 <img src="./Images/English.PNG" alt="English Website" width="300px" height="150px"><br><br>
                 <p>I have created a website using HTML, CSS for learning English through Tamil. This website is used to
                     learn English basic to advanced level easily.</p><br>
-                <p>Click here to visit <a href="">Mu2 English</a></p>
+                <p>Click here to visit <a href="https://muthupandim5799.neocities.org/" target="_blank">Mu2 English</a>
+                </p>
             </div>
         </div>
-    </div><br><hr>
-    <br>
+    </div><br>
+    <hr><br>
 
     <!-- Contact -->
     <div id="contact">
         <div class="contact">
             <h2>Contact Me</h2>
             <ul>
-                <li><i class="fa-brands fa-whatsapp fa-bounce icon-size"></i> &nbsp;&nbsp;<a href="">9962983706</a></li>
-                <li><i class="fa-solid fa-envelope fa-fade icon-size"></i> &nbsp;&nbsp;<a
-                        href="">muthupandim5799@gmail.com</a></li>
-                <li><i class="fa-brands fa-linkedin fa-flip icon-size"></i> &nbsp;&nbsp;<a
+                <li title="WhatsApp"><i class="fa-brands fa-whatsapp fa-bounce icon-size"></i> &nbsp;&nbsp;<a
+                        href="https://wa.me/message/UK4DWLTIAJ64C1" target="_blank">Muthupandi M</a>
+                </li>
+                <li title="Email"><i class="fa-solid fa-envelope fa-beat-fade icon-size"></i> &nbsp;&nbsp;<span>muthupandim5799@gmail.com</span></li>
+                <li title="LinkedIn"><i class="fa-brands fa-linkedin fa-flip icon-size"></i> &nbsp;&nbsp;<a
                         href="https://www.linkedin.com/in/muthupandim/" target="_blank">Muthupandi M</a></li>
-                <li><i class="fa-brands fa-square-instagram fa-beat icon-size"></i> &nbsp;&nbsp;<a
+                <li title="GitHub"><i class="fa-brands fa-github fa-spin icon-size"></i>&nbsp;&nbsp;<a
+                        href="https://github.com/M-Muthu-Pandi" target="_blank">M-Muthu-Pandi</a></li>
+                <li title="Instagram"><i class="fa-brands fa-square-instagram fa-beat icon-size"></i> &nbsp;&nbsp;<a
                         href="https://www.instagram.com/smartmu2?utm_source=qr&igsh=emlibTF6aDVyemZ6"
                         target="_blank">SmartMu2</a></li>
+                <li title="Telegram"><i class="fa-brands fa-telegram icon-size fa-fade"></i>&nbsp;&nbsp;<a
+                        href="https://t.me/Muthupandi5799" target="_blank">@Muthupandi5799</a></li>
             </ul>
         </div>
         <div>
             <img src="./Images/Mu2-white.jpg" alt="Muthu Image" width="300px" height="300px">
         </div>
     </div>
-
 
     <!-- JavaScript File -->
     <script src="portfolio.js"></script>

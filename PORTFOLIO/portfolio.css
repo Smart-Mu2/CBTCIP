@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -19,17 +19,18 @@ body {
     background-color: #04e762;
 }
 
-.navbar-list , .navbar-link {
+.navbar-list,
+.navbar-link {
     display: flex;
     column-gap: 20px;
 }
 
-.navbar-link > a {
+.navbar-link>a {
     text-decoration: none;
     color: #1d232c;
 }
 
-.navbar-link > a:hover {
+.navbar-link>a:hover {
     text-decoration: underline;
     font-weight: bold;
     color: #1d232c;
@@ -42,29 +43,45 @@ body {
 /* Side navbar */
 .side-navbar {
     background-color: #04e762;
-    width: 50%; height: 100%;
+    width: 50%;
+    height: 100%;
     position: fixed;
-    top: 0; left: -68%;
-    padding: 20px;
+    top: 0;
+    left: -68%;
+    padding: 10px;
     color: #1d232c;
     z-index: 1;
     transition: 2s;
 }
 
+.side-navbar>p {
+    text-align: right;
+}
+
+.side-navbar>img {
+    border-radius: 50%;
+    outline: 2px solid #1d232c;
+}
+
+.side-navbar>img:hover {
+    width: 150px;
+}
+
 .navbar-ul {
-    list-style-type:none;
+    list-style-type: none;
+    margin-left: 10%;
 }
 
 .side-navbar-link {
     margin-top: 30px;
 }
 
-.side-navbar-link > a {
+.side-navbar-link>a {
     text-decoration: none;
     color: #1d232c;
 }
 
-.side-navbar-link > a:hover {
+.side-navbar-link>a:hover {
     font-weight: bold;
     color: #1d232c;
 }
@@ -85,13 +102,46 @@ hr {
     font-size: 50px;
 }
 
+.home-title:hover {
+    filter: drop-shadow(10px 7px 10px #04e762);
+}
+
 .home-dev {
     display: flex;
     align-items: center;
 }
 
-.home-dev > img {
+.home-dev>img {
     margin-left: 10px;
+}
+
+.mu2-resume>a {
+    text-decoration: none;
+    color: #1d232c;
+    font-weight: bold;
+}
+
+.home-image > img:hover {
+    filter: drop-shadow(10px 7px 10px #04e762);
+}
+
+/* Resume */
+.mu2-resume {
+    padding: 10px;
+    margin: 20px;
+    background-color: #04e762;
+    border-radius: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.mu2-resume:hover {
+    background-color: #1d232c;
+    border: 2px solid #04e762;
+}
+
+.mu2-resume:hover > a {
+    color: #04e762;
 }
 
 /* About */
@@ -107,8 +157,12 @@ hr {
     align-self: flex-end;
 }
 
-.about-image > img{
+.about-image>img {
     width: 500px;
+}
+
+.about-image>img:hover {
+    filter: drop-shadow(10px 7px 10px #000);
 }
 
 .about-summary {
@@ -123,6 +177,15 @@ hr {
     text-align: justify;
 }
 
+.mu2-summary:hover {
+    background-color: #1d232c;
+    color: #fff;
+}
+
+.mu2-summary >p {
+    text-indent: 50px;
+}
+
 .mu2-skill-edu {
     position: relative;
     left: 10%;
@@ -132,7 +195,8 @@ hr {
 /* Projects */
 #projects {
     background-color: gray;
-    margin: 10px; padding: 30px;
+    margin: 10px;
+    padding: 30px;
 }
 
 .mu2-project {
@@ -148,7 +212,7 @@ hr {
     margin: 10px;
 }
 
-.project > h3 {
+.project>h3 {
     text-decoration: underline;
 }
 
@@ -160,6 +224,16 @@ hr {
 
 .project a:hover {
     text-decoration: underline;
+    color: #fff;
+}
+
+.project:hover {
+    background-color: #1d232c;
+    color: #fff;
+}
+
+.project:hover a{
+    color: #fff;
 }
 
 /* Contact */
@@ -191,19 +265,18 @@ hr {
     padding: 5px;
 }
 
-.contact a {
+.contact a, .contact span {
     color: #04e762;
     text-decoration: none;
     font-weight: bolder;
 }
 
-/* Resume */
-.mu2-resume {
-    padding: 10px; margin: 20px;
-    background-color: #04e762;
-    border-radius: 30px;
-    font-weight: bolder;
-    cursor: pointer;
+.contact a:hover {
+    font-size: 20px;
+}
+
+#contact img:hover {
+    filter: drop-shadow(10px 7px 10px #04e762);
 }
 
 /* Media Query */
@@ -230,12 +303,13 @@ hr {
         font-size: 20px;
     }
 
-    .home-image > img {
+    .home-image>img {
         width: 300px;
     }
 
-    .home-dev > img {
-        width: 30px; height: 30px;
+    .home-dev>img {
+        width: 30px;
+        height: 30px;
     }
 
     .about-image {
@@ -253,5 +327,11 @@ hr {
 
     #contact img {
         display: none;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    #about {
+        margin: 110px;
     }
 }
