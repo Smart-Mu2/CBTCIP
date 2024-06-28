@@ -1,0 +1,84 @@
+body {
+	font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.mu2-todo {
+    width: 85%;
+    min-height: 500px;
+    background-color: #3ABEF9;
+    margin-top: 30px;
+    border-radius: 8px;
+    padding: 10px 10px 20px 10px;
+}
+
+/* Task input */
+.mu2-input {
+    padding-bottom: 20px;
+}
+
+#task-input {
+	width: 50%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #A7E6FF;
+}
+
+#add-task-btn {
+	background-color: #1679AB;
+	color: #000;
+    font-weight: bolder;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Tasks */
+.mu2-tasks {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 320px;
+
+}
+
+.mu2-Add-task, .mu2-Finish-task {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 45%;
+    padding: 10px;
+}
+
+#task-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+    text-align: left;
+}
+
+#task-list li {
+	padding: 6px;
+	border-bottom: 1px solid #000;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+/* Media Query */
+@media screen and (max-width:768px) {
+    .mu2-tasks {
+        display: block;
+    }
+
+    .mu2-Add-task, .mu2-Finish-task {
+        width: 95%;
+    }
+}
