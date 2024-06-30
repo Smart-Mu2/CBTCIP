@@ -56,16 +56,46 @@ body {
     padding: 10px;
 }
 
-#task-list {
-	list-style: none;
+#task-list , #task-finish-list {
 	padding: 0;
 	margin: 0;
     text-align: left;
 }
 
-#task-list li {
-	padding: 6px;
+#task-list li , #task-finish-list li {
+	padding: 5px;
 	border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.mu2-content {
+    flex-basis: 430px;
+}
+
+li button {
+    background-color: #04e762;
+	color: #000;
+    font-weight: bolder;
+	padding: 7px;
+    margin: 0 5px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#task-finish-list li {
+    text-decoration: line-through;
+}
+
+#task-finish-list .fa-check {
+    margin-right: 10px;
+    font-size: large;
+}
+
+#task-list li:last-child {
+    border-bottom: none;
 }
 
 h2 {
@@ -80,5 +110,10 @@ h2 {
 
     .mu2-Add-task, .mu2-Finish-task {
         width: 95%;
+    }
+
+    .mu2-content {
+        flex-basis: 290px;
+        text-align: justify;
     }
 }
