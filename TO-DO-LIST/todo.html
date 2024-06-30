@@ -21,40 +21,36 @@
 </head>
 
 <body>
-    <div class="mu2-todo">
-        <!-- Task input -->
-        <div class="mu2-input">
-            <h1>To-Do List <i class="fa-solid fa-list-check fa-bounce"></i></h1>
-            <input type="text" id="task-input" placeholder="Enter a task">
-            <button id="add-task-btn" onclick="addTask()">Add Task</button>
-        </div>
-        <hr>
+        <div class="mu2-todo">
 
-        <!-- Tasks -->
-        <div class="mu2-tasks">
-            <!-- Added Tasks -->
-            <div class="mu2-Add-task">
-                <h2>Tasks to complete</h2>
-                <ol id="task-list">
-                    <li>
-                        <div class="mu2-content">taskText</div>
-                        <div><button onclick="finishItem(event)"><i class="fa-solid fa-check"></i></button><button onclick="deleteItem(event)"><i class="fa-solid fa-trash"></i></button></div>
-                    </li>
-                </ol>
+            <!-- Task input -->
+            <div class="mu2-input">
+                <h1>To-Do List <i class="fa-solid fa-list-check fa-bounce"></i></h1>
+                <input type="text" id="task-input" placeholder="Enter a task">
+                <button id="add-task-btn" onclick="addTask()">Add Task</button>
             </div>
+            <hr>
 
-            <!-- Completed tasks -->
-            <div class="mu2-Finish-task">
-                <h2>Completed Tasks</h2>
-                <ol id="task-finish-list">
-                    <li>
-                        <div><i class="fa-solid fa-check"></i> Hello</div>
-                        <div><button onclick="deleteItem(event)"><i class="fa-solid fa-trash"></i></button></div>
-                    </li>
-                </ol>
+            <!-- Tasks -->
+            <div class="mu2-tasks">
+                <!-- Added Tasks -->
+                <div class="mu2-Add-task">
+                    <h2>Tasks to complete</h2>
+                    <ol id="task-list">
+                        <!-- tasks to complete will be listed here -->
+                    </ol>
+                </div>
+
+                <!-- Completed tasks -->
+                <div class="mu2-Finish-task">
+                    <h2>Completed Tasks</h2>
+                    <ol id="task-finish-list">
+                        <!-- completed tasks will be listed here -->
+                    </ol>
+                </div>
             </div>
         </div>
-    </div>
+
     <script src="todo.js"></script>
 </body>
 

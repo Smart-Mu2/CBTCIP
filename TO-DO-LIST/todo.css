@@ -1,5 +1,5 @@
 body {
-	font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
@@ -8,7 +8,7 @@ body {
 }
 
 .mu2-todo {
-    width: 85%;
+    width: 95%;
     min-height: 500px;
     background-color: #3ABEF9;
     margin-top: 30px;
@@ -22,22 +22,22 @@ body {
 }
 
 #task-input {
-	width: 50%;
-	padding: 10px;
-	border: none;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: #A7E6FF;
 }
 
 #add-task-btn {
-	background-color: #1679AB;
-	color: #000;
+    background-color: #1679AB;
+    color: #000;
     font-weight: bolder;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Tasks */
@@ -49,22 +49,26 @@ body {
 
 }
 
-.mu2-Add-task, .mu2-Finish-task {
-    border: 1px solid black;
+.mu2-Add-task,
+.mu2-Finish-task {
+    border: 2px solid black;
     border-radius: 5px;
     width: 45%;
     padding: 10px;
 }
 
-#task-list , #task-finish-list {
-	padding: 0;
-	margin: 0;
+#task-list,
+#task-finish-list {
+    padding: 0;
+    margin: 0;
     text-align: left;
+
 }
 
-#task-list li , #task-finish-list li {
-	padding: 5px;
-	border-bottom: 1px solid #000;
+#task-list li,
+#task-finish-list li {
+    padding: 5px;
+    border-bottom: 1px solid #000;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -72,30 +76,51 @@ body {
 
 .mu2-content {
     flex-basis: 430px;
+    text-align: left;
 }
 
-li button {
-    background-color: #04e762;
-	color: #000;
+.mu2-content::before {
+    list-style-type: disc;
+}
+
+#task-finish-list .mu2-content {
+    flex-basis: 530px;
+}
+
+.complete-btn,
+.delete-btn,
+.delete-btn1 {
+    color: #000;
     font-weight: bolder;
-	padding: 7px;
-    margin: 0 5px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
+    padding: 5px;
+    margin: 0 0 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#task-finish-list li {
+li .complete-btn {
+    background-color: #28a745;
+}
+
+li .delete-btn,
+.delete-btn1 {
+    background-color: #dc3545;
+}
+
+#task-finish-list .mu2-content {
     text-decoration: line-through;
 }
 
-#task-finish-list .fa-check {
-    margin-right: 10px;
-    font-size: large;
+#task-finish-list .delete-btn,
+#task-finish-list .date1 {
+    display: none;
 }
 
-#task-list li:last-child {
-    border-bottom: none;
+.date,
+.date1 {
+    font-size: 12px;
+    opacity: 0.8;
+    text-align: right;
 }
 
 h2 {
@@ -108,12 +133,25 @@ h2 {
         display: block;
     }
 
-    .mu2-Add-task, .mu2-Finish-task {
+    .mu2-Add-task,
+    .mu2-Finish-task {
         width: 95%;
+        margin-bottom: 10px;
     }
 
     .mu2-content {
-        flex-basis: 290px;
-        text-align: justify;
+        flex-basis: 500px;
+
+    }
+
+    #task-list li,
+    #task-finish-list li {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .date,
+    .date1 {
+        flex-basis: 500px;
     }
 }
